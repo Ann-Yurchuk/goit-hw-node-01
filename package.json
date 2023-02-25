@@ -1,5 +1,5 @@
 {
-  "name": "homework-node",
+  "name": "goit-hw-node-01",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,8 +12,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "commander": "^10.0.0",
-    "nodemon": "^2.0.20",
-    "yargs": "^17.7.1"
+    "commander": "^10.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
