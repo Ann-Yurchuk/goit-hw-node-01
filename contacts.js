@@ -9,9 +9,7 @@ const listContacts = async () => {
     const contacts = await fs.readFile(contactsPath, "utf-8");
     return JSON.parse(contacts);
   } catch (error) {
-    console.log("====================================");
     console.log(error.message);
-    console.log("====================================");
   }
 };
 
@@ -20,9 +18,7 @@ const getContactById = async (contactId) => {
     const contacts = await listContacts();
     return contacts.find((contact) => String(contact.id) === String(contactId));
   } catch (error) {
-    console.log("====================================");
     console.log(error.message);
-    console.log("====================================");
   }
 };
 
@@ -34,9 +30,7 @@ const removeContact = async (contactId) => {
     );
     await fs.writeFile(contactsPath, JSON.stringify(newContactsList, null, 4));
   } catch (error) {
-    console.log("====================================");
     console.log(error.message);
-    console.log("====================================");
   }
 };
 
@@ -49,9 +43,7 @@ const addContact = async (name, email, phone) => {
     await fs.writeFile(contactsPath, JSON.stringify(contacts, null, 4));
     return newContact;
   } catch (error) {
-    console.log("====================================");
     console.log(error.message);
-    console.log("====================================");
   }
 };
 
