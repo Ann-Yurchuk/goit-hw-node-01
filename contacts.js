@@ -2,7 +2,7 @@ const fs = require("fs/promises");
 const path = require("path");
 const crypto = require("crypto");
 
-const contactsPath = path.resolve(__dirname, ".", "db", "contacts.json");
+const contactsPath = path.resolve(__dirname, "db", "contacts.json");
 
 const listContacts = async () => {
   try {
